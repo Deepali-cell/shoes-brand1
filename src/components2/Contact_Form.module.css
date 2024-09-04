@@ -1,0 +1,56 @@
+form{
+  display: inline-block;
+  padding: 0px 10px;
+  position: relative;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+.form input{
+  width: 490px;
+  outline: none;
+  padding: 8px 0px;
+  margin-bottom: 30px;
+}
+.name{
+  position:absolute;
+  top: 15px;
+  left: 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+
+.email{
+  position:absolute;
+  top: 90px;
+  left: 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+.text{
+  position:absolute;
+  top: 165px;
+  left: 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+.submit{
+  margin: 30px 0px;
+}
+.submit button{
+position: absolute; 
+ left: 380px; 
+ padding: 5px 30px;
+ background-color: black;
+ color: white;
+ outline: none;
+ border: none;
+ font-size: 1.1rem;
+ font-weight: 500;
+}

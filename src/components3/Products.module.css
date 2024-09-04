@@ -1,0 +1,23 @@
+.detail h3{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 500;
+}
+.detail h6{
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: cursive;
+}
+.box{
+  position: relative;
+}
+.add{
+  position: absolute;
+  left: 100px;
+  bottom: 0px;
+  font-size: 1.4rem;
+  padding:0px 10px;
+  background-color: red;
+  outline: none;
+  border: none;
+  color: white;
+}

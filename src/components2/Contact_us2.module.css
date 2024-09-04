@@ -1,0 +1,19 @@
+.btn1{
+  margin-right: 30px;
+}
+.btn1 , .btn2{
+  width: 250px;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 0px;
+}
+.btn3{
+ margin-top: 40px;
+  width: 530px;
+  outline: none;
+  border: 1.5px solid black;
+  padding: 10px 0px;
+}

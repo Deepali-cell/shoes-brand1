@@ -1,0 +1,14 @@
+.contact_area{
+  padding: 0px 100px;
+}
+.contact_area h1{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.contact_area p{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
