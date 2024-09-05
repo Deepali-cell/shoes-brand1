@@ -1,3 +1,7 @@
+.detail h3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
 .detail h6{
  font-size: 1.2rem;
  font-weight: 500;
@@ -5,13 +9,15 @@
 }
 .box{
  position: relative;
- margin-top: 70px;
 }
 .delete{
-  position: absolute;
-  left: 100px;
-  bottom: 0px;
-  font-size: 1.6rem;
-  color: red;
-  cursor: pointer;
+ position: absolute;
+ left: 100px;
+ bottom: 0px;
+ font-size: 1rem;
+ padding:0px 10px;
+ background-color: red;
+ outline: none;
+ border: none;
+ color: white;
 }

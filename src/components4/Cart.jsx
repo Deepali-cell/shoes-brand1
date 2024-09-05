@@ -1,28 +1,20 @@
 import styles from "./Cart.module.css";
-import { MdDelete } from "react-icons/md";
 
-const Cart = ({ additem, deletitem }) => {
+function Cart({ name, price, image, deleting }) {
   return (
     <>
-      <div>
-        <h1 style={{ marginTop: "70px", position: "absolute", left: "550px" }}>
-          My Cart
-        </h1>
-      </div>
-      {additem.map((Items, index) => (
-        <div className={styles.box}>
-          <img src={Items.Image} alt="" height="200px" />
-          <div className={styles.detail}>
-            <h6>{Items.Name}</h6>
-            <h6>{Items.Price}</h6>
-            <MdDelete
-              className={styles.delete}
-              onClick={() => deletitem(Items.Name)}
-            />
-          </div>
+      <div className={styles.box}>
+        <img src={image} alt="shoes image" height="200px" />
+        <div className={styles.detail}>
+          <h3>{name}</h3>
+          <h6>{price}</h6>
+          <br />
+          <button className={styles.delete} onClick={() => deleting(name)}>
+            delete
+          </button>
         </div>
-      ))}
+      </div>
     </>
   );
-};
+}
 export default Cart;

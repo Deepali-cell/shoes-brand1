@@ -1,7 +1,6 @@
 import styles from "./Button.module.css";
 import Flipcart_logo from "../assets/Flipcart_logo.png";
 import Amazon_logo from "../assets/amazon_logo.png";
-import Menu from "../components3/Menu";
 
 const Button = () => {
   return (
