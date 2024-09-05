@@ -8,7 +8,31 @@ function MyCart() {
   const deleting = contextobj.deleting;
   return (
     <>
-      {additem.map((item, index) => (
+      {additem.length === 0 ? (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "60vh",
+          }}
+        >
+          {" "}
+          <h1 style={{ textAlign: "center", fontSize: "4rem" }}>Empty Cart </h1>
+        </div>
+      ) : (
+        additem.map((item, index) => (
+          <Cart
+            key={index}
+            name={item.name}
+            price={item.price}
+            image={item.image}
+            deleting={deleting}
+          ></Cart>
+        ))
+      )}
+      {/* {additem.map((item, index) => (
+        
         <Cart
           key={index}
           name={item.name}
@@ -16,7 +40,7 @@ function MyCart() {
           image={item.image}
           deleting={deleting}
         ></Cart>
-      ))}
+      ))} */}
     </>
   );
 }
