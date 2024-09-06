@@ -17,14 +17,16 @@ const Contact_form = () => {
   };
   return (
     <>
-      <form>
+      <form style={{ position: "absolute", left: "0px" }}>
         <div className={styles.form}>
-          <label className={styles.name}>Name</label>
-          <input type="text" ref={name} />
-          <label className={styles.email}>E-Mail</label>
-          <input type="email" ref={email} />
-          <label className={styles.text}>Text</label>
-          <textarea rows={4} ref={text}></textarea>
+          <input type="text" ref={name} placeholder="Name" />
+          <input type="email" ref={email} placeholder="Email" />
+          <textarea
+            rows={4}
+            ref={text}
+            placeholder="Enter your Text here..."
+            style={{ width: "500px" }}
+          ></textarea>
           <div className={styles.submit}>
             <button type="submit" onClick={submiting}>
               Submit

@@ -1,0 +1,14 @@
+.outer{
+  height: 100vh;
+  background-color: 	#6082B6;
+  padding: 0px 50px;
+}
+.logo{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  height: 100px;
+}

@@ -1,0 +1,51 @@
+ form input{
+  margin: 20px 0px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding-right: 80px;
+  padding-left: 20px;
+}
+.icon{
+  font-size: 1.4rem;
+}
+.password_detail{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.password_detail a{
+  text-decoration: none;
+  font-weight: 600;
+}
+.password_detail button{
+  padding: 5px 20px;
+  background-color: rgb(62, 92, 175);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+.password_detail button a{
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+.password_detail .forget{
+  font-size:0.8rem;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+.bottom a{
+  padding: 0px 5px;
+  text-decoration: none;
+}
+.bottom_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}

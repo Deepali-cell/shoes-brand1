@@ -12,7 +12,7 @@ const Header = () => {
         <div>
           <ul className={styles.navbar}>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/Home">Home</Link>
             </li>
             <li>
               <Link to="/Menu">Menu</Link>
@@ -26,7 +26,7 @@ const Header = () => {
           </ul>
         </div>
         <div className={styles.loginbtn}>
-          <button>Login</button>
+          <button>User account</button>
         </div>
       </div>
     </>

@@ -1,10 +1,12 @@
 import Contact_form from "./Contact_Form";
 import styles from "./Contact_us1.module.css";
 import Contact_us2 from "./Contact_us2";
+import Header from "../components/Header";
 
 const Contact_us1 = () => {
   return (
     <>
+      <Header />
       <div className={styles.contact_area}>
         <h1>Contact Us</h1>
         <p>

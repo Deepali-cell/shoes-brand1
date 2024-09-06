@@ -3,7 +3,7 @@ import { MdAddShoppingCart } from "react-icons/md";
 
 const Products = ({ name, price, image, adding }) => {
   const handleadd = (name) => {
-    adding(name);
+    adding(name, price, image);
   };
   return (
     <>

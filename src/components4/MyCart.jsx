@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ProductContext } from "../store/BrandStore";
 import Cart from "./Cart";
+import Header from "../components/Header";
 
 function MyCart() {
   const contextobj = useContext(ProductContext);
@@ -8,6 +9,7 @@ function MyCart() {
   const deleting = contextobj.deleting;
   return (
     <>
+      <Header />
       {additem.length === 0 ? (
         <div
           style={{
@@ -31,16 +33,6 @@ function MyCart() {
           ></Cart>
         ))
       )}
-      {/* {additem.map((item, index) => (
-        
-        <Cart
-          key={index}
-          name={item.name}
-          price={item.price}
-          image={item.image}
-          deleting={deleting}
-        ></Cart>
-      ))} */}
     </>
   );
 }

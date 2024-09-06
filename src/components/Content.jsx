@@ -1,10 +1,12 @@
 import styles from "./Content.module.css";
 import Shoes from "../assets/shoes.png";
 import Button from "./Button";
+import Header from "../components/Header";
 
 const Content = () => {
   return (
     <>
+      <Header />
       <div className={styles.content}>
         <div className={styles.right}>
           <h1>
