@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+}
+.smallgroup img{
+  height: 100px;
+  cursor: pointer;
+}
+.smallgroup ul li{
+  list-style: none;
+  margin: 20px 0px;
+}
+.large{
+  height: 400px;
+  margin-left: 40px;
+}

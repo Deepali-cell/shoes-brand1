@@ -8,17 +8,19 @@ import Contact_us1 from "./components2/Contact_us1.jsx";
 import Content from "./components/Content.jsx";
 import MyCart from "./components4/MyCart.jsx";
 import LoginForm from "./components5/LoginForm.jsx";
+import ProductDetail from "./components6/ProductDetail.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      { path: "/", element: <LoginForm /> },
       { path: "/Menu", element: <Menu /> },
       { path: "/Contact_us", element: <Contact_us1 /> },
       { path: "/Cart", element: <MyCart /> },
       { path: "/Home", element: <Content /> },
-      { path: "/", element: <LoginForm /> },
+      { path: "/ProductDetail", element: <ProductDetail /> },
     ],
   },
 ]);

@@ -1,0 +1,12 @@
+.page{
+  height: 100vh;
+  background-image: url("background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

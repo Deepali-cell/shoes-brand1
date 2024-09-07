@@ -8,7 +8,9 @@ const Products = ({ name, price, image, adding }) => {
   return (
     <>
       <div className={styles.box}>
-        <img src={image} alt="" height="200px" />
+        <a href="/ProductDetail">
+          <img src={image} alt="" height="200px" />
+        </a>
         <div className={styles.detail}>
           <h3>{name}</h3>
           <h6>{price}</h6>
