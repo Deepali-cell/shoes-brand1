@@ -1,5 +1,5 @@
-.menubar{
+.options{
   display: grid;
   grid-template-columns: auto auto auto;
-  margin-left: 140px;
+  padding-left: 200px;
 }

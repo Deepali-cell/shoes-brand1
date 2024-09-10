@@ -1,15 +1,14 @@
 import Products from "./Products";
-import { ProductContext } from "../store/BrandStore";
+import { myarray, ProductContext } from "../store/BrandStore";
 import { useContext } from "react";
-import { myarray } from "../store/BrandStore";
 
-const Items = () => {
+const Items = ({ show }) => {
   const contextobj = useContext(ProductContext);
   const adding = contextobj.adding;
 
   return (
     <>
-      {myarray.map((items, index) => (
+      {show?.map((items, index) => (
         <Products
           key={index}
           name={items.name}

@@ -8,12 +8,18 @@ import green from "../assets/greenshoe.png";
 import { children, createContext, useReducer } from "react";
 
 export const myarray = [
-  { name: "Brown shoe", price: "129$", image: brown },
-  { name: "Green shoe", price: "330$", image: green },
-  { name: "Red shoe", price: "120$", image: red },
-  { name: "Pink shoe", price: "400$", image: pink },
-  { name: "Blue shoe", price: "200$", image: blue },
-  { name: "Grey shoe", price: "230$", image: grey },
+  { name: "Brown shoe", price: "129$", image: brown, type: "Gens" },
+  { name: "Green shoe", price: "330$", image: green, type: "Gens" },
+  { name: "Red shoe", price: "120$", image: red, type: "Women" },
+  { name: "Pink shoe", price: "400$", image: pink, type: "Women" },
+  { name: "Blue shoe", price: "200$", image: blue, type: "Kids" },
+  { name: "Grey shoe", price: "230$", image: grey, type: "Kids" },
+];
+export const sidearray = [
+  { name: "All", type: "All" },
+  { name: "Men", type: "Gens" },
+  { name: "Women", type: "Women" },
+  { name: "Kids", type: "Kids" },
 ];
 
 export const ProductContext = createContext([]);
