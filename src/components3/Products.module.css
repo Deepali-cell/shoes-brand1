@@ -1,23 +1,37 @@
-.detail h3{
-   font-family: Georgia, 'Times New Roman', Times, serif;
-   font-weight: 500;
-}
 .detail h6{
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 800;
   font-family: cursive;
 }
 .box{
   position: relative;
+  box-shadow: rgba(8, 8, 190, 0.1) 0px 4px 16px, rgba(8, 8, 228, 0.1) 0px 8px 24px, rgba(14, 14, 197, 0.1) 0px 16px 56px;
+  height: 350px;
+  width: 230px;
+  margin: 20px 0px;
+}
+.shoebox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.shoebox h3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+.detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .add{
-  position: absolute;
-  left: 100px;
-  bottom: 0px;
-  font-size: 1.4rem;
-  padding:0px 10px;
-  background-color: red;
+  font-size: 1.2rem;
+  padding:0px 20px;
+  background:linear-gradient(to right , #C04848 , #480048);
   outline: none;
   border: none;
   color: white;
+  margin-top: 10px;
 }

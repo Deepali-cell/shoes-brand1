@@ -1,0 +1,23 @@
+.box{
+  display: inline-block;
+  box-shadow: rgba(8, 8, 190, 0.1) 0px 4px 16px, rgba(8, 8, 228, 0.1) 0px 8px 24px, rgba(14, 14, 197, 0.1) 0px 16px 56px;
+  margin: 20px;
+  padding: 20px;
+}
+.image{
+  border: 2px solid black;
+  height:70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.box2{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.user{
+  margin-left: 40px;
+}
+.review p{
+  text-align: left;
+}

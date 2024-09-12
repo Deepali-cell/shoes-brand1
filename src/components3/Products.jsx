@@ -1,5 +1,5 @@
 import styles from "./Products.module.css";
-import { MdAddShoppingCart } from "react-icons/md";
+import Stars from "./Stars";
 
 const Products = ({ name, price, image, adding }) => {
   const handleadd = (name) => {
@@ -8,14 +8,17 @@ const Products = ({ name, price, image, adding }) => {
   return (
     <>
       <div className={styles.box}>
-        <a href="/ProductDetail">
-          <img src={image} alt="" height="200px" />
-        </a>
-        <div className={styles.detail}>
+        <div className={styles.shoebox}>
+          <a href="/ProductDetail">
+            <img src={image} alt="" height="200px" />
+          </a>
           <h3>{name}</h3>
+        </div>
+        <div className={styles.detail}>
           <h6>{price}</h6>
-          <button className={styles.add}>
-            <MdAddShoppingCart onClick={() => handleadd(name)} />
+          <Stars></Stars>
+          <button className={styles.add} onClick={() => handleadd(name)}>
+            Add To Cart
           </button>
         </div>
       </div>

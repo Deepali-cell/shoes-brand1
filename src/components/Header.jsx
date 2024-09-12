@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import Logo from "../assets/logo.png";
+import { FaCircleUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -21,12 +22,15 @@ const Header = () => {
               <Link to="/Cart">My Cart</Link>
             </li>
             <li>
+              <Link to="/Review">Customer Review</Link>
+            </li>
+            <li>
               <Link to="/Contact_us">Contact</Link>
             </li>
           </ul>
         </div>
-        <div className={styles.loginbtn}>
-          <button>User account</button>
+        <div>
+          <FaCircleUser className={styles.loginbtn} />
         </div>
       </div>
     </>

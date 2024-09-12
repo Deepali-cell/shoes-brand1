@@ -9,6 +9,7 @@ import Content from "./components/Content.jsx";
 import MyCart from "./components4/MyCart.jsx";
 import LoginForm from "./components5/LoginForm.jsx";
 import ProductDetail from "./components6/ProductDetail.jsx";
+import Customerreview from "./components7/Customerreview.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { path: "/Cart", element: <MyCart /> },
       { path: "/Home", element: <Content /> },
       { path: "/ProductDetail", element: <ProductDetail /> },
+      { path: "/Review", element: <Customerreview /> },
     ],
   },
 ]);

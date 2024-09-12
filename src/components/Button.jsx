@@ -1,7 +1,7 @@
 import styles from "./Button.module.css";
 import Flipcart_logo from "../assets/Flipcart_logo.png";
 import Amazon_logo from "../assets/amazon_logo.png";
-import Menu from "../components3/Menu";
+import { Link } from "react-router-dom";
 
 const Button = () => {
   return (
@@ -9,7 +9,9 @@ const Button = () => {
       <div style={styles.bottom}>
         <div>
           <button className={styles.shop}>Shop Now</button>
-          <button className={styles.category}>Category</button>
+          <button className={styles.category}>
+            <Link to="/Menu">Category</Link>
+          </button>
         </div>
         <div className={styles.bottom2}>
           <h6>Also Available On</h6>
