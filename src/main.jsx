@@ -7,20 +7,22 @@ import Menu from "./components3/Menu.jsx";
 import Contact_us1 from "./components2/Contact_us1.jsx";
 import Content from "./components/Content.jsx";
 import MyCart from "./components4/MyCart.jsx";
-import LoginForm from "./components5/LoginForm.jsx";
 import ProductDetail from "./components6/ProductDetail.jsx";
 import Customerreview from "./components7/Customerreview.jsx";
+import OuterArea from "./components5/OuterArea.jsx";
+import OuterArea2 from "./components5/OuterArea2.jsx";
 
 const router = createBrowserRouter([
+  { path: "/Signup", element: <OuterArea /> },
+  { path: "/Login", element: <OuterArea2 /> },
   {
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <LoginForm /> },
       { path: "/Menu", element: <Menu /> },
       { path: "/Contact_us", element: <Contact_us1 /> },
       { path: "/Cart", element: <MyCart /> },
-      { path: "/Home", element: <Content /> },
+      { path: "/", element: <Content /> },
       { path: "/ProductDetail", element: <ProductDetail /> },
       { path: "/Review", element: <Customerreview /> },
     ],

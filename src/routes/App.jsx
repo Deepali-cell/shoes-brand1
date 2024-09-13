@@ -1,11 +1,12 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Navigate } from "react-router-dom";
 import ProductReduderContext from "../store/BrandStore";
 
 function App() {
+  const check = localStorage.getItem("loggedin");
   return (
     <>
       <ProductReduderContext>
-        <Outlet />
+        {check ? <Outlet></Outlet> : <Navigate to="/Login"></Navigate>}
       </ProductReduderContext>
     </>
   );

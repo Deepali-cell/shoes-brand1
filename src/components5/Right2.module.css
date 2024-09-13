@@ -12,7 +12,9 @@ form{
 }
 .signbtn{
   margin-top: 10px;
-  margin-right: 70px;
+}
+.signbtn button{
+  margin-bottom: 10px;
 }
 form button{
   background-color: rgb(62, 92, 175);
@@ -34,4 +36,7 @@ form button a{
 }
 .icon{
   font-size: 1.4rem;
+}
+.login {
+ margin-left: 20px;
 }

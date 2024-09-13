@@ -1,9 +1,15 @@
 import styles from "./Header.module.css";
 import Logo from "../assets/logo.png";
-import { FaCircleUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const userName = JSON.parse(localStorage.getItem("user"));
+  const handlelogout = () => {
+    localStorage.removeItem("loggedin");
+    navigate("/Login");
+  };
   return (
     <>
       <div className={styles.header}>
@@ -13,7 +19,7 @@ const Header = () => {
         <div>
           <ul className={styles.navbar}>
             <li>
-              <Link to="/Home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/Menu">Menu</Link>
@@ -29,8 +35,15 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <FaCircleUser className={styles.loginbtn} />
+        <div className={styles.userdetail}>
+          <h4> {userName.name}</h4>
+          <button
+            type="button"
+            onClick={handlelogout}
+            className={styles.logout}
+          >
+            Log out
+          </button>
         </div>
       </div>
     </>

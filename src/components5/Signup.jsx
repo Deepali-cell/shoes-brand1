@@ -1,8 +1,8 @@
 import Left from "./Left";
 import styles from "./Signup.module.css";
-import Right from "./Right";
+import Right2 from "./Right2";
 
-const Login = () => {
+const Signup = () => {
   return (
     <>
       <div className={styles.container}>
@@ -10,10 +10,10 @@ const Login = () => {
           <Left></Left>
         </div>
         <div className={styles.right}>
-          <Right></Right>
+          <Right2></Right2>
         </div>
       </div>
     </>
   );
 };
-export default Login;
+export default Signup;

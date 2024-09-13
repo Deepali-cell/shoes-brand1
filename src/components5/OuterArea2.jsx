@@ -1,8 +1,8 @@
 import styles from "./OuterArea.module.css";
 import Logo from "../assets/LogoWhite.png";
-import Signup from "./Signup";
+import Login from "./Login";
 
-function OuterArea() {
+function OuterArea2() {
   return (
     <>
       <div className={styles.outer}>
@@ -10,10 +10,10 @@ function OuterArea() {
           <img src={Logo} alt="" />
         </div>
         <div>
-          <Signup></Signup>
+          <Login></Login>
         </div>
       </div>
     </>
   );
 }
-export default OuterArea;
+export default OuterArea2;

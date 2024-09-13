@@ -1,7 +1,7 @@
 import styles from "./Left.module.css";
 import advertising from "../assets/advertising.png";
 
-const Left = ({ handlelogin, handle }) => {
+const Left = () => {
   return (
     <>
       <div className={styles.bg}>
@@ -10,10 +10,6 @@ const Left = ({ handlelogin, handle }) => {
             <img src={advertising} alt="" className={styles.image} />
             <img src={advertising} alt="" className={styles.image_shadow} />
           </div>
-        </div>
-        <div className={styles.btns}>
-          <button onClick={handlelogin}>Login</button>
-          <button onClick={handle}>Sign Up</button>
         </div>
       </div>
     </>
