@@ -1,0 +1,35 @@
+.bigbox{
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.smallbox{
+  margin: 0px 20px;
+}
+.smallbox h5{
+  font-weight: 700;
+}
+.smallbox button{
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+  outline: none;
+  border:none;
+  margin: 0px 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+/* middle1 */
+.bigb1{
+  display: flex;
+}
+/* middle4 */
+.container{
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-bottom: 20px;
+}

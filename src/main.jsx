@@ -11,6 +11,8 @@ import ProductDetail from "./components6/ProductDetail.jsx";
 import Customerreview from "./components7/Customerreview.jsx";
 import OuterArea from "./components5/OuterArea.jsx";
 import OuterArea2 from "./components5/OuterArea2.jsx";
+import DashBoard from "./Dashboard/DashBoard.jsx";
+import Transation from "./Transation/Transation.jsx";
 
 const router = createBrowserRouter([
   { path: "/Signup", element: <OuterArea /> },
@@ -25,6 +27,8 @@ const router = createBrowserRouter([
       { path: "/", element: <Content /> },
       { path: "/ProductDetail", element: <ProductDetail /> },
       { path: "/Review", element: <Customerreview /> },
+      { path: "/DashBoard", element: <DashBoard /> },
+      { path: "/Transation", element: <Transation /> },
     ],
   },
 ]);

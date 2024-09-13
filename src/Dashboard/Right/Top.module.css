@@ -1,0 +1,30 @@
+.bigbox{
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 20px;
+  margin-top: 40px;
+}
+.smallbox{
+  margin: 0px 20px;
+}
+.smallbox h5{
+  font-weight: 700;
+}
+.smallbox button{
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+  outline: none;
+  border:none;
+  margin: 0px 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+.tag{
+  font-size: 0.7rem;
+  background-color: rgb(240, 233, 233);
+  height: 20px;
+  width: 40px;
+  padding: 0px 10px;
+  text-align: center;
+}

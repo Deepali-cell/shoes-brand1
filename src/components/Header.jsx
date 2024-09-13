@@ -33,6 +33,9 @@ const Header = () => {
             <li>
               <Link to="/Contact_us">Contact</Link>
             </li>
+            <li>
+              <Link to="/DashBoard">Dashboard</Link>
+            </li>
           </ul>
         </div>
         <div className={styles.userdetail}>
